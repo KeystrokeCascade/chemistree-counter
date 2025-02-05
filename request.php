@@ -3,8 +3,8 @@ error_reporting(E_ALL ^ E_WARNING);
 $ch = curl_init();
 
 # Set params
-#curl_setopt($ch, CURLOPT_URL, "https://archiveofourown.org/users/Chemistree/works");
-curl_setopt($ch, CURLOPT_URL, "file://" . getcwd() . "/works.html"); # Local file for testing
+curl_setopt($ch, CURLOPT_URL, "https://archiveofourown.org/users/Chemistree/works");
+#curl_setopt($ch, CURLOPT_URL, "file://" . getcwd() . "/works.html"); # Local file for testing
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"); # Fake user agent bc I'm evil and it won't work otherwise.
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); # Disable SSL
