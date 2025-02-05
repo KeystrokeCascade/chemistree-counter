@@ -1,2 +1,2 @@
-# chemistree-counter
- How many fanfics has Chemistree written instead of updating Calling Names?
+# Chemistree Counter
+A silly website for counting how many fanfics Chemistree has written on AO3 since last updating my favourite fic, Calling Names.
