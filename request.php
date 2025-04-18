@@ -9,12 +9,13 @@ curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; r
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); # Disable SSL
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 15); # Set timeout
 
 $response = curl_exec($ch);
 
 # Get error
 if(curl_errno($ch)) {
-	echo "curl error: " . curl_error($ch);
+	return;
 }
 curl_close($ch);
 
